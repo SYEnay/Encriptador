@@ -1,0 +1,279 @@
+:root {
+    --primary: #000000;/* Negro */
+    --secondary: #0A3871; /* Azul rey */
+    --tertiary: #4B66A5; /* Azul */
+    --cuaternary: #D4A418; /* Mostaza */
+    --quinary: #F3F5FC; /* Azul claro*/
+}
+
+body {
+    font-family: "Madimi One", sans-serif;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.2rem;
+}
+
+img{
+    width: 100%;
+}
+
+/* Fondos */
+.bg-dark{
+    background-color: var(--primary);
+}
+.bg-blue-dark{
+    background-color: var(--secondary);
+}
+.bg-blue{
+    background-color: var(--tertiary);
+}
+.bg-yellow{
+    background-color: var(--cuaternary);
+}
+.bg-blue-clear{
+    background-color: var(--quinary);
+}
+.bg-gradient{
+    background-image: linear-gradient(to bottom, #0a3871, #1b407b, #274984, #32518e, #3d5a98, #5169a4, #6478af, #7688bb, #95a2cb, #b4bddb, #d3d9ec, #f3f5fc);
+}
+
+/* Margin */
+.mb-3{
+    margin-bottom: 3rem;
+}
+.mb-1{
+    margin-bottom: 1rem;
+}
+.mt-1{
+    margin-top: 1rem;
+}
+.mbt-1{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.mbt-2{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.m-all{ 
+    margin:1rem;
+}
+.m-auto{
+    margin: auto;
+}
+
+/* Texto */
+.txt-white{
+    color: var(--quinary);
+}
+.txt-blue-dark{
+    color: var(--secondary);
+}
+.txt-yellow{
+    color: var(--cuaternary);
+}
+.text-center{
+    text-align:center
+}
+.text-justify{
+    text-align: justify;
+}
+
+/* Posición */
+.d-flex{
+    display:flex;
+}
+.column{
+    flex-direction: column;
+}
+.justify-content-center{
+    justify-content:center;
+}
+.justify-content-around{
+    justify-content: space-around;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.items-center{
+    align-items: center
+}
+
+/* Padding */
+.p-all{
+    padding: 1rem;
+}
+.ptb-1{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.prl-1{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Transition */
+.ts{
+    transition: 1s;
+}
+
+/* Bordes */
+.br-yellow{
+    border: 2px solid var(--cuaternary);
+}
+.br{
+    box-sizing: border-box;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 15px;
+}
+
+/* Sombras */
+.s-1{
+    box-shadow: 9px 11px 21px 3px rgba(46,74,117,0.43);
+}
+
+/*----------------------------------------------------------------*/
+/* HEADER */
+.logo{
+    min-width:10%;
+}
+@media (max-width:1000px){
+    .logo{
+        max-width: 40%;
+    }
+}
+
+/* main */
+.encriptador{
+    display: flex;
+    width:80%;
+}
+
+main{
+    width: 60%;
+    min-height: 700px;
+}
+.continer{
+    height: 100%;
+}
+.box{
+    height: 50px;
+    width: 130px;
+}
+.box img{
+    height: 100%;
+}
+.big-box{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+textarea{
+    border-radius: 0;
+    background-color: transparent;
+    color: var(--secondary);
+    width: 100%;
+    min-height: 450px;
+}
+@media (max-width:1000px){
+    .encriptador{
+        display: block;
+    }
+    main{
+        width:100%;
+    }
+    textarea{
+        width: 100%;
+    }
+}
+
+/* Aside */
+aside{
+    width: 35%;
+    height: 700px;
+}
+
+.result{
+    width: 100%;
+    background-color: var(--quinary);
+    min-height: 30px;
+}
+.result p{
+    width: 90%;
+    overflow: scroll;
+    max-height: 400px;
+    min-height: 200px;
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+.superbox{
+    max-height: 270px;
+    max-width: 300px;
+}
+.text{
+    min-height: 130px;
+}
+
+@media (max-width:1000px){
+    aside{
+        width:100%;
+        height: 450px;
+    }
+    .encriptar,.desencriptar{
+        margin-bottom: 1rem ;
+    }
+    .superbox{
+        max-height: 200px;
+        max-width: 200px;
+    }
+}
+
+
+/* Botones */
+.bottoms{
+    display: flex;
+}
+.desencriptar, .limpiar{
+    border:1px solid var(--cuaternary);
+    background-color: var(--cuaternary);
+    color: var(--quinary);
+}
+.desencriptar:hover{
+    background-color: var(--tertiary);
+    border:1px solid var(--tertiary);
+}
+.encriptar,.copy,.limpiar:hover{
+    border:1px solid var(--secondary);
+    background-color: var(--quinary);
+    color: var(--secondary);
+}
+.encriptar:hover, .copy:hover{
+    background-color: var(--secondary);
+    color:var(--quinary);
+}
+.enviar{
+    border-radius: 5px;
+    padding: 1rem 4rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+@media (max-width:1000px){
+    .bottoms{
+        flex-direction: column;
+    }
+}
+.oculto{
+    display: none;
+} 

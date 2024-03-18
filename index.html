@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="shortcut icon" href="asset/img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Besley:ital,wght@0,400..900;1,400..900&family=Kameron:wght@400..700&family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/reset.css">
+    <link rel="stylesheet" href="asset/css/styles.css">
+</head>
+<body class="bg-gradient">
+    <header class="bg-yellow mb-1">
+        <div class="d-flex items-center">
+            <div class="logo mbt-1">
+                <img src="/asset/img/Logo.png" alt="">
+            </div>
+            <div class="intro mbt-1">
+                <h1 class="txt-white mb-1">Encriptador Challenge</h1>
+                <h3 class="txt-blue-dark">Giron Escalona Erendira Nayely</h3>
+            </div>
+        </div>
+    </header>
+    <section class="encriptador justify-content-center m-auto br">
+        <main class="bg-blue-clear m-auto br s-1">
+            <div class="continer">
+                <div class="box ptb-1">
+                    <img src="/asset/img/Logo.png" alt="">
+                </div>
+                <div class="big-box m-auto">
+                    <textarea class="br-yellow " name="" id="text" cols="30" rows="10"></textarea>
+                    <div class="accions mt-1">
+                        <p>Solo letras minúsculas y sin acentos</p>
+                        <div class="bottoms justify-content-around mbt-1">
+                            <input type="button" onclick="encriptar();" class="encriptar enviar ts " value="Encriptar">
+                            <input type="button" onclick="desencriptar();" class="desencriptar enviar ts" value="Desencriptar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside class="bg-blue mbt-1 br s-1">
+            <div class="big-box m-auto">
+                <div id="result" class="result mbt-2 br oculto">
+                    <p id="r" class="m-all"></p>
+                </div>
+                <div id="bottom" class="bottom justify-content-center  oculto">
+                    <input type="button" onclick="copiarTexto();" class="copy enviar ts mb-1" value="Copiar">
+                    <input type="button" onclick="limpiar();" class="limpiar enviar ts mb-1" value="Limpiar">
+                </div>
+                <div id="superbox" class="bg-blue-clear br mbt-2">
+                    <div class="superbox ptb-1 m-auto">
+                        <img src="asset/img/Muñeco.png" alt="">
+                    </div>
+                    <div id="text" class="text">
+                        <h2 class="mb-1 text-center txt-blue-dark">Ningún mensaje fue encontrado</h2>
+                        <p class="mbt-2 text-center txt-yellow">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </section>
+    <footer class="bg-dark mt-1">
+        <div class="d-flex items-center justify-content-center">
+            <div class="logo mbt-1">
+                <img src="/asset/img/Logo.png" alt="">
+            </div>
+            <div class="intro mbt-1">
+                <div class="text-center txt-yellow m-auto">
+                    <p>© 2024 ALURA / Giron Escalona Erendira Nayely.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="asset/js/app.js"></script>
+</body>
+</html>
